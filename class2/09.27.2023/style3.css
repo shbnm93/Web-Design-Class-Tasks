@@ -1,0 +1,47 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    height: 100%;
+}
+
+.box {
+    background-color: blue;
+    color: #fff;
+    width: 200px; 
+    height: 200px;
+    margin: 40px; /* Spacing between boxes */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(45deg);
+    box-sizing: border-box;
+}
+
+.div1 {
+    background-color: red;
+}
+
+.div2 {
+    background-color: orange;
+}
+
+.div3 {
+    background-color: yellowgreen;
+}
+
+.div4 {
+    background-color: green;
+    margin-left:180px; 
+}
+
+.div5 {
+    background-color: blue;
+}

@@ -1,0 +1,29 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+table{
+    width: 100%;
+    height: auto;
+    background-color: bisque;
+}
+
+
+td,tr{
+    min-height: 40px;
+}
+
+
+tr:nth-child(odd){
+    background-color: aliceblue;
+}
+
+tr:nth-child(even){
+    background-color: grey;
+}
+
+td:hover{
+    background-color: purple;
+    cursor: pointer;
+}

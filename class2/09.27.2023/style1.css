@@ -1,0 +1,90 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+
+div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+}
+
+.div1{
+    background-color: blueviolet;
+    border-radius: 100%;
+    top: 10px;
+    left: 10px;
+    animation-name:circle;
+    animation-duration: 4s;
+    /* animation-delay: 2s; */
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.div2{
+    background-color: blue;
+    bottom: 10px;
+    right: 10px ;
+    animation-name: cube;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    /* animation-direction: reverse; */
+}
+
+@keyframes circle{
+    from {
+        width: 200px;
+        height: 200px;
+    }
+    to {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@keyframes cube{
+    0%{
+        bottom: 10px;
+        right: 10px;
+        background-color: blue;
+        border-radius: 0%;
+        /* transform: scale(1); */
+        transform: rotate(0deg);
+    }
+    25%{
+        bottom: calc(100% - 210px);
+        right: 10px;
+        background-color: blueviolet;
+        border-radius: 100%;
+        /* transform: scale(3); */
+        transform: rotate(45deg);
+    }
+    50%{
+        bottom: calc(100% - 210px);
+        right: calc(100% - 210px);
+        background-color: red;
+        border-radius: 0%;
+        transform: rotate(360deg);
+    }
+
+    75%{
+        bottom: 10px;
+        right: calc(100% - 210px);
+        background-color: orange;
+        border-radius: 100%;
+        /* transform: rotate(180deg); */
+    }
+    100%{
+        bottom: 10px;
+        right: 10px;
+        background-color: blue;
+        border-radius: 0%;
+        transform: rotate(0deg);
+    }
+}
